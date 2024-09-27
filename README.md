@@ -1,6 +1,4 @@
-<div align="center">
-
-<img width="120" src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/558ab792aec59eb639671d41c5666ef12f6d0d80/assets/Writing%20hand/Light/3D/writing_hand_3d_light.png"/>
+# This is a Fork of [Original Deprecated Project](https://github.com/PressJump/reimaginedreadme)
 
 ## Deprecation Notice
 
@@ -14,15 +12,15 @@ GitHub readme widgets are too seperated and you need to add 4 different widgets 
 
 ### Example Widget:
 
-[![reimaginedreadme](https://myreadme.vercel.app/api/embed/pressjump?panels=userstatistics,toprepositories,toplanguages,commitgraph)](https://github.com/PressJump/reimaginedreadme)
+[![reimaginedreadme](https://gh-stats.andcool.ru/api/embed/andcool-systems?panels=userstatistics,toprepositories,toplanguages,commitgraph)](https://github.com/PressJump/reimaginedreadme)
 
 ## How to install
 
-To create a custom widget we have a API route `https://myreadme.vercel.app/api/embed/YOURNAME` replacing yourname with well uh yourname.
+To create a custom widget we have a API route `https://gh-stats.andcool.ru/api/embed/YOURNAME` replacing yourname with well uh yourname.
 
 #### Adding Widgets (Populating your Widget)
 
-To populate your widget with your contribution stats, top repositories, or your commit graph you need to define which panels should be in the widget so you customize your own widget to your liking. We can do this through adding the url parameter panels `https://myreadme.vercel.app/api/embed/YOURNAME?panels=`. The order you put the panels is important as they will be reordered dependent on their size.
+To populate your widget with your contribution stats, top repositories, or your commit graph you need to define which panels should be in the widget so you customize your own widget to your liking. We can do this through adding the url parameter panels `https://gh-stats.andcool.ru/api/embed/YOURNAME?panels=`. The order you put the panels is important as they will be reordered dependent on their size.
 
 #### Valid Panels Include
 
