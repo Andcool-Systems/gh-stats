@@ -1,14 +1,13 @@
-import Head from 'next/head'
-import { type } from 'os'
-import { devsvg } from '../../utils/devsvg'
-import { Repository } from '../../utils/types'
+import { PanelProps, Repository } from '../../utils/types'
 
 export const Usertoprepositoriespanel = ({
 	topRepositories,
 	componentpos,
+	panelProps
 }: {
 	topRepositories: Repository[]
-	componentpos: { x: number; y: number }
+	componentpos: { x: number; y: number },
+	panelProps: PanelProps
 }) => {
 	return (
 		<>
@@ -19,7 +18,7 @@ export const Usertoprepositoriespanel = ({
 					height="24"
 					viewBox="0 0 24 24"
 					fill="none"
-					stroke="currentColor"
+					stroke={`#${panelProps.titlecolor ? panelProps.titlecolor : '000'}`}
 					stroke-width="2"
 					stroke-linecap="round"
 					stroke-linejoin="round"
@@ -32,6 +31,7 @@ export const Usertoprepositoriespanel = ({
 					className="title bolder"
 					x={30}
 					y="35"
+					fill={`#${panelProps.titlecolor ? panelProps.titlecolor : '000'}`}
 				>
 					Top Repositories
 				</text>
@@ -46,7 +46,7 @@ export const Usertoprepositoriespanel = ({
 						>
 							<g className="item" transform="translate(3, 2)">
 								<svg viewBox="0 0 128 128" height="23" width="22">
-									<g fill="#181616">
+									<g fill={`#${panelProps.titlecolor ? panelProps.titlecolor : '000'}`}>
 										<path
 											fillRule="evenodd"
 											clipRule="evenodd"

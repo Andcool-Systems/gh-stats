@@ -1,15 +1,15 @@
-import Head from 'next/head'
-import { type } from 'os'
-import { devsvg } from '../../utils/devsvg'
 //@ts-ignore
 import * as d3 from 'd3'
+import { PanelProps } from '../../utils/types';
 
 export const Usercommitgraph = ({
 	monthcontributions,
 	componentpos,
+	panelProps
 }: {
 	monthcontributions: number[]
-	componentpos: { x: number; y: number }
+	componentpos: { x: number; y: number },
+	panelProps: PanelProps
 }) => {
 	// Define the SVG canvas dimensions
 	const svgWidth = 140
@@ -42,7 +42,7 @@ export const Usercommitgraph = ({
 					height="25"
 					viewBox="0 0 24 24"
 					fill="none"
-					stroke="currentColor"
+					stroke={`#${panelProps.titlecolor ? panelProps.titlecolor : '000'}`}
 					stroke-width="2"
 					stroke-linecap="round"
 					stroke-linejoin="round"
@@ -55,6 +55,7 @@ export const Usercommitgraph = ({
 					className="title bolder"
 					x={30}
 					y="35"
+					fill={`#${panelProps.titlecolor ? panelProps.titlecolor : '000'}`}
 				>
 					Commit Graph
 				</text>

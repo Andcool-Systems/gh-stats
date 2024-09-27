@@ -153,6 +153,7 @@ export const container = (
 					<Userstatspanel
 						userData={userData}
 						componentpos={{ x: Number(x.toString()), y: y }}
+						panelProps={panelProps}
 					/>
 				)
 				x += 310
@@ -162,6 +163,7 @@ export const container = (
 					<Usertoplangspanel
 						topLanguages={userData.toplang!}
 						componentpos={{ x: Number(x.toString()), y: y }}
+						panelProps={panelProps}
 					/>
 				)
 				x += 180
@@ -171,6 +173,7 @@ export const container = (
 					<Usertoprepositoriespanel
 						topRepositories={userData.toprepos!}
 						componentpos={{ x: Number(x.toString()), y: y }}
+						panelProps={panelProps}
 					/>
 				)
 				x += 180
@@ -180,6 +183,7 @@ export const container = (
 					<Usercommitgraph
 						monthcontributions={userData.commitgraph!}
 						componentpos={{ x: Number(x.toString()), y: y }}
+						panelProps={panelProps}
 					/>
 				)
 				x += 180

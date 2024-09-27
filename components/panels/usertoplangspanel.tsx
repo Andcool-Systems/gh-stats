@@ -1,13 +1,14 @@
-import Head from 'next/head'
-import { type } from 'os'
 import { devsvg } from '../../utils/devsvg'
+import { PanelProps } from '../../utils/types';
 
 export const Usertoplangspanel = ({
 	topLanguages,
 	componentpos,
+	panelProps
 }: {
 	topLanguages: [string, unknown][]
-	componentpos: { x: number; y: number }
+	componentpos: { x: number; y: number },
+	panelProps: PanelProps
 }) => {
 	return (
 		<>
@@ -18,7 +19,7 @@ export const Usertoplangspanel = ({
 					height="25"
 					viewBox="0 0 24 24"
 					fill="none"
-					stroke="currentColor"
+					stroke={`#${panelProps.titlecolor ? panelProps.titlecolor : '000'}`}
 					stroke-width="2"
 					y="17"
 				>
@@ -30,6 +31,7 @@ export const Usertoplangspanel = ({
 					className="title bolder"
 					x={30}
 					y="35"
+					fill={`#${panelProps.titlecolor ? panelProps.titlecolor : '000'}`}
 				>
 					Top Languages
 				</text>

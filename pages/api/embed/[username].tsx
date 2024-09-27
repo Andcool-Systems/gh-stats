@@ -28,6 +28,7 @@ export default async function handler(
 	const panels = req.query.panels?.toString().split(',')
 	let userData = {} as UserData
 	const panelProps: PanelProps = { color, titlecolor, textcolor, bgcolor }
+	console.log(panelProps)
 
 	//username will exist but we should validate username
 	if (!username || !/^[a-zA-Z0-9-]+$/.test(username)) {
