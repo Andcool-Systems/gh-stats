@@ -239,7 +239,7 @@ export const container = (
 					width={width - 1}
 					height={height - 1}
 					fill={panelProps.bgcolor ? `#${panelProps.bgcolor}` : '#efefef'}
-					stroke="#e1e4e8"
+					stroke="#31343b"
 				/>
 
 				{panelComponents}
