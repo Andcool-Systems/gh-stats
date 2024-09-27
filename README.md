@@ -1,9 +1,5 @@
 # This is a Fork of [Original Deprecated Project](https://github.com/PressJump/reimaginedreadme)
 
-## Deprecation Notice
-
-Reimagined Readme is currently undergoing deprecation. Further information can be found at issue [#32](https://github.com/PressJump/reimaginedreadme/issues/32) regarding it. Thank you for your support.
-
 ## Reimagined Readme
 
 GitHub readme widgets are too seperated and you need to add 4 different widgets with all different styles to show your GitHub statistics. **_Reimagined Readme_** tries to fix this problem by giving a layout to your readme that does not trigger OCD.
