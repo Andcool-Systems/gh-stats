@@ -129,7 +129,7 @@ export const container = (
 
 	// ================================================================================
 	let width = 0
-	let height = 229
+	let height = 221
 	let x = 0
 	let y = 0
 	const panelComponents: JSX.Element[] = []
